@@ -1,5 +1,5 @@
 local open_ai_url = "https://api.openai.com/v1/chat/completions";
-local api_key = _G.key
+local api_key = "org-AIcrSM7ZhSAKpAeHhvz1FxAm"
 local http_service = cloneref(game:GetService("HttpService"));
 
 local format = string.format;
@@ -26,7 +26,7 @@ local api = {}; do
     api.post = post;
 end
 
-loadstring(api.get("https://raw.githubusercontent.com/dPw4hqVLC576BrasAT3DKJzp/decompiler/main/utils/disassembler.lua"))()
+loadstring(api.get("https://raw.githubusercontent.com/PhaiWac/Project-Byte-Code/main/disassemble.lua"))()
 
 function decompile(path)
     local res = post({
