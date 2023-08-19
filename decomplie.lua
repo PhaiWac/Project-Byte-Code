@@ -28,6 +28,8 @@ end
 
 loadstring(api.get("https://raw.githubusercontent.com/PhaiWac/Project-Byte-Code/main/disassemble.lua"))()
 
+print(disassemble)
+
 function decompile(path)
     local res = post({
         content_type="application/json",
